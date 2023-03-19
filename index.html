@@ -1,111 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-     <!-- Don’t forget to link your ext. Stylesheet under this comment -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles.css">
 
+	<title>Bootstrap Grid Email</title>
+</head>
+<body>
+<!--------------------------------------------NAV BAR-------------------------------------------------------->
+	<div class="container-fulid">
+		<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <img src="flash_img.png" height="50px" width="50px"><a class="navbar-brand">FLASH MAIL</a>
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+	</div> <!--------------------------------------NAV BAR ENDS HERE-------------------------------------------------------->
+	<div class="container-fluid h-100">
+		<div class="row h-100 text-center">
+			<div class="col">
+				<div class="row h-100">
+					<div class="col-sm-12 col-md-12 col-lg-5 sect1">
+						<nav class="nav flex-column">
+							<img src="flash_mail.png" height="40px" widtht="40px" class="img-fluid" alt="Responsive image">
+							<a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-inbox me-2" viewBox="0 0 16 16">
+								<path d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4H4.98zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438L14.933 9zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374l3.7-4.625z"/>
+							  </svg>INBOX</a>
+							<a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-2" viewBox="0 0 16 16">
+								<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+							  </svg>STARRED</a>
+							<a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send me-2" viewBox="0 0 16 16">
+								<path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+							  </svg>SENT</a>
+							<a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-octagon me-2" viewBox="0 0 16 16">
+								<path d="M4.54.146A.5.5 0 0 1 4.893 0h6.214a.5.5 0 0 1 .353.146l4.394 4.394a.5.5 0 0 1 .146.353v6.214a.5.5 0 0 1-.146.353l-4.394 4.394a.5.5 0 0 1-.353.146H4.893a.5.5 0 0 1-.353-.146L.146 11.46A.5.5 0 0 1 0 11.107V4.893a.5.5 0 0 1 .146-.353L4.54.146zM5.1 1 1 5.1v5.8L5.1 15h5.8l4.1-4.1V5.1L10.9 1H5.1z"/>
+								<path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+							  </svg>SPAM</a>
+							<a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash me-2" viewBox="0 0 16 16">
+								<path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+								<path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+							  </svg>TRASH</a>
+						  </nav>
+					</div> <!--/.col.sect1 -->
+					<div class="col sect3">
+						<div class="list-group">
+							<a href="#" class="list-group-item list-group-item-action">
+							  <div class="d-flex w-100 justify-content-between">
+								<h5 class="mb-1">DISCORD</h5>
+								<small class="text-muted"><strong>1 day ago</strong></small>
+							  </div>
+							  <p class="mb-1">You have new messages waiting for you</p>
+							</a>
+							<a href="#" class="list-group-item list-group-item-action">
+							  <div class="d-flex w-100 justify-content-between">
+								<h5 class="mb-1">PLURALSIGHT</h5>
+								<small class="text-muted"><strong>3 days ago</strong></small>
+							  </div>
+							  <p class="mb-1">You have new messages waiting for you</p>
+							</a>
+							<a href="#" class="list-group-item list-group-item-action">
+								<div class="d-flex w-100 justify-content-between">
+								  <h5 class="mb-1">DOORDASH</h5>
+								  <small class="text-muted"><strong>6 days ago</strong></small>
+								</div>
+								<p class="mb-1">You order is on the way!</p>
+							  </a>
+							  <a href="#" class="list-group-item list-group-item-action">
+								<div class="d-flex w-100 justify-content-between">
+								  <h5 class="mb-1">NIKE</h5>
+								  <small class="text-muted"><strong>5 days ago</strong></small>
+								</div>
+								<p class="mb-1">GET 50% OFF on your next order for being a loyal customer</p>
+							  </a>
+							  <a href="#" class="list-group-item list-group-item-action">
+								<div class="d-flex w-100 justify-content-between">
+								  <h5 class="mb-1">AMAZON</h5>
+								  <small class="text-muted"><strong>3 days ago</strong></small>
+								</div>
+								<p class="mb-1">Your order is 5 stops away!</p>
+							  </a>
+							  <a href="#" class="list-group-item list-group-item-action">
+								<div class="d-flex w-100 justify-content-between">
+								  <h5 class="mb-1">INSTACART</h5>
+								  <small class="text-muted"><strong>3 days ago</strong></small>
+								</div>
+								<p class="mb-1">Your did not checkout your cart. Need more time?</p>
+							  </a>
+							  <a href="#" class="list-group-item list-group-item-action">
+								<div class="d-flex w-100 justify-content-between">
+								  <h5 class="mb-1">TINDER</h5>
+								  <small class="text-muted"><strong>3 days ago</strong></small>
+								</div>
+								<p class="mb-1">Somebody swiped right on you!!!!</p>
+							  </a>
+							  <a href="#" class="list-group-item list-group-item-action">
+								<div class="d-flex w-100 justify-content-between">
+								  <h5 class="mb-1">THURSDAY BOOTS</h5>
+								  <small class="text-muted"><strong>3 days ago</strong></small>
+								</div>
+								<p class="mb-1">Subscribe to our newsletter for new releases.</p>
+							  </a>
+						  </div>
+					</div> <!-- /.col.sect2 -->
+					</div><!-- row h-100 -->
+					</div><!--h-100 -->
+					<div class="col-12 col-lg-7 sect2">
+						<div class="mb-3">
+							<label for="exampleFormControlInput1" class="form-label">FROM</label>
+							<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+						  </div>
+						<div class="mb-3">
+							<label for="exampleFormControlInput1" class="form-label">TO</label>
+							<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+						  </div>
+						  
+						  <div class="mb-3">
+							<label for="exampleFormControlTextarea1" class="form-label-message">MESSAGE</label>
+							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						  </div>
+						  <button type="button" class="btn btn-warning btn-lg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send me-2" viewBox="0 0 16 16">
+							<path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+						  </svg>SEND</button>
+						  <button type="button" class="btn btn-warning btn-lg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-paperclip" viewBox="0 0 16 16">
+							<path d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z"/>
+						  </svg></button>
 
-    <title>Document</title>
-  </head>
-  <body>
-    <!---------------------------------------------------navbar-------------------------------------------------------------------->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <!---------------------------------------------offcanvas trigger--------------------------------------------------------->
-          <button class="navbar-toggler me-2" 
-          type="button" 
-          data-bs-toggle="offcanvas" 
-          data-bs-target="#offcanvasExample" 
-          aria-controls="offcanvasExample">
-        
-          <span class="navbar-toggler-icon" data-bs-target="#offcanvasExample">
+					</div> <!--/.col.sect3 -->
 
-          </span>
-          </button>
-          <!---------------------------------------------offcanvas trigger--------------------------------------------------------->
+		</div><!--/.row.h-100.text-center -->
+	</div><!--/.container-fluid.h-100 -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
-          <a class="navbar-brand fw-bold text-uppercase me-auto" href="#">FLASH MAIL</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      
-    <!-------------------------------------------------------off-canvas sidebar menu------------------------------------------------------------->
-    
-      
-      
-      <div class="offcanvas offcanvas-start bg-dark text-white sidebar-nav" 
-      tabindex="-1" 
-      id="offcanvasExample" 
-      aria-labelledby="offcanvasExampleLabel">
-        
-      <div class="offcanvas-body p-0">
-        <nav class="nav flex-column">
-          <a class="nav-link text-white" href="#"><i class="bi bi-house me-2"></i>HOME</a>
-          <a class="nav-link" href="#">Link</a>
-          <a class="nav-link disabled">Disabled</a>
-         <!---- <a class="nav-link active" aria-current="page" href="#">Active</a> -->
-          <a class="nav-link" href="#">Link</a>
-          <a class="nav-link" href="#">Link</a>
-          <a class="nav-link disabled">Disabled</a>
-        </nav>
-          
-          
-        </div>
-      </div>
-    
-    <!-------------------------------------------------------off-canvas sidebar menu------------------------------------------------------------->
-
-    <!---------------------------------------------------------search button-------------------------------------------------------->
-          <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
-            <form class="d-flex ms-auto">
-              <div class="input-group my-3 my-lg-0">
-                    <input 
-                    type="text" 
-                    class="form-control" 
-                    placeholder="Recipient's username" 
-                    aria-label="Recipient's username" 
-                    aria-describedby="button-addon2">
-                    
-    <!-------------------------------------------------search icon------------------------------------------------------------------------------------------>        
-                    <button class="btn btn-primary" type="button" id="button-addon2">
-                        <i class="bi bi-search"></i>
-                    </button>
-                  </div>
-    <!-------------------------------------------------search icon-------------------------------------------------------------------->
-            </form>
-            <ul class="navbar-nav mb-2 mb-lg-0">
-              
-    <!-----------------------------------------------dropdown icon and menu--------------------------------------------------->  
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="bi bi-person-circle"></i>
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-end">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </li>
-                
-                </ul>
-    <!-----------------------------------------------dropdown icon and menu--------------------------------------------------->  
-
-    <!---------------------------------------------------search button-------------------------------------------------------->
-          </div>
-        </div>
-      </nav>
-    <!-------------------------------------------------navbar----------------------------------------------------------------------------->
-    <!--Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </body>
+</body>
 </html>
-
