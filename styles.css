@@ -1,33 +1,67 @@
-
-body,
-button {
-    font-family: "Inter", sans-serif;
+html, body {
+	height: 100%;
 }
 
 .navbar-brand{
-    font-family: 'Lilita One', cursive;
+	font-family: 'Lilita One', cursive;
 }
 
-:root {
-    --offcanvas-width: 270px;
-    --topNavbarHeight: 56px;
+.nav-link{
+	font-family: 'Lilita One', cursive;
+	color: black;
+	padding: 20px;
+	margin-bottom: 10px;
+	
 }
 
-.sidebar-nav {
-    width: var(--offcanvas-width);
+.img-fluid{
+	max-width: 100%;
+	height: auto;
 }
 
-@media (min-width:992px) {
-    body{
-      overflow: auto !important;
-    }
-    .offcanvas-backdrop::before{
-        display: none;
-    }
-    .sidebar-nav {
-        transform: none;
-        visibility: visible !important;
-        top: var(--topNavbarHeight);
-        height: calc(100% - var(--topNavbarHeight));
-    }
+.list-group{
+	padding-top: 20px;
+	color: bisque;
+	font-size: 20;
+	align-items: left;
+	justify-content: space-evenly;
+	padding-bottom: 20px;
+}
+
+.form-label{
+	font-family: 'Lilita One', cursive;
+	padding-top: 40px;
+
+}
+
+.form-label-message{
+	font-family: 'Lilita One', cursive;
+	padding-top: 70px;
+
+}
+
+
+
+.search-button{
+
+}
+
+.btn{
+	
+	
+}
+.sect1 {
+	background-color: rgb(224, 207, 207);
+}
+
+.sect2 {
+	background-color: lightblue;
+}
+
+.sect3 {
+	background-color: rgb(238, 238, 122);
+}
+
+.navbar {
+	background-color: lightseagreen;
 }
